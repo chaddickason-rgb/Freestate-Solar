@@ -9,6 +9,7 @@
   --green-deep:    #1a2b1f;
   --green-mid:     #2d4a35;
   --green-light:   #3d6147;
+  --green-hero:    #1a2b1f;
   --amber:         #c8922a;
   --amber-light:   #e0a83d;
   --cream:         #f4f0e6;
@@ -212,7 +213,7 @@ a:hover { color: var(--amber-light); }
 .hero {
   position: relative;
   background: var(--green-deep);
-  min-height: calc(100vh - var(--nav-h));
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,21 +223,27 @@ a:hover { color: var(--amber-light); }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 60% 60% at 80% 50%, rgba(61,97,71,0.35) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(200,146,42,0.06) 0%, transparent 60%);
   pointer-events: none;
 }
 
-/* Subtle grid texture */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.37;
+}
+
+/* Overlay to keep text legible */
 .hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(244,240,230,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244,240,230,0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
+  background:
+    linear-gradient(to right, rgba(26,43,31,0.75) 0%, rgba(26,43,31,0.3) 100%),
+    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(61,97,71,0.3) 0%, transparent 70%);
 }
 
 .hero-content {
@@ -264,7 +271,7 @@ a:hover { color: var(--amber-light); }
 
 .hero-sub {
   font-size: 1.1rem;
-  color: rgba(244,240,230,0.7);
+  color: rgba(244,240,230,0.88);
   max-width: 520px;
   margin-bottom: 2.5rem;
   font-weight: 300;
@@ -421,6 +428,14 @@ a:hover { color: var(--amber-light); }
   background: var(--cream);
   padding: 6rem 0 4rem;
   border-bottom: 1px solid var(--border);
+}
+
+/* Italic lines on inner pages: smaller, softer amber */
+.page-hero h1 em,
+.page-hero-dark h1 em {
+  font-size: 0.88em;
+  color: #b8892a;
+  opacity: 0.9;
 }
 
 .page-hero-dark {
