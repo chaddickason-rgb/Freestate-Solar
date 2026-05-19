@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — FreeState Solar</title>
+  <meta name="description" content="Contact FreeState Solar — New York community solar developer based in Tivoli, NY.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="wordmark">FreeState<span>Solar</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="landowners.html">Landowners</a></li>
+        <li><a href="capital-partners.html">Capital Partners</a></li>
+        <li><a href="company.html">Our Company</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-page-hero">
+      <div class="container container-narrow">
+        <p class="hero-eyebrow">Contact</p>
+        <h1>Let's talk.</h1>
+        <p class="page-hero-sub">We respond to every inquiry. If you are a landowner, investor, or developer, use the form below or email us directly.</p>
+
+        <div class="contact-info-bar">
+          <div class="contact-info-item">
+            <span class="contact-info-label">Location</span>
+            <span>Tivoli, New York</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Email</span>
+            <a href="mailto:info@freestatesolar.com">info@freestatesolar.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Territory</span>
+            <span>Hudson Valley &amp; Upstate NY</span>
+          </div>
+        </div>
+
+        <form class="contact-form" name="contact" netlify>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="type">I am a…</label>
+            <select id="type" name="type">
+              <option value="">Select one</option>
+              <option value="landowner">Landowner</option>
+              <option value="investor">Investor / Capital Partner</option>
+              <option value="developer">Developer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="address">Property address (landowners)</label>
+            <input type="text" id="address" name="address" placeholder="Optional — street, town, county, NY">
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're working on..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="wordmark">FreeState<span>Solar</span></span>
+      <p>Tivoli, New York &nbsp;|&nbsp; <a href="mailto:info@freestatesolar.com">info@freestatesolar.com</a></p>
+      <p class="footer-copy">&copy; 2025 FreeState Solar, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

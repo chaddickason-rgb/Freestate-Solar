@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landowners — FreeState Solar</title>
+  <meta name="description" content="FreeState Solar partners with landowners across the Hudson Valley and Upstate New York to develop community solar farms on underutilized land.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="wordmark">FreeState<span>Solar</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="landowners.html" class="active">Landowners</a></li>
+        <li><a href="capital-partners.html">Capital Partners</a></li>
+        <li><a href="company.html">Our Company</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Landowners</p>
+        <h1>Your land.<br><em>Your legacy.</em></h1>
+        <p class="page-hero-sub">A solar lease is one of the most durable, low-risk income streams available to a landowner. FreeState Solar makes the process straightforward — from initial evaluation through construction and beyond.</p>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <h4>Site Evaluation</h4>
+            <p>We review your parcel for solar potential — acreage, proximity to grid infrastructure, slope, and land use constraints. No cost, no commitment.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <h4>Lease Negotiation</h4>
+            <p>We work with you and your attorney to structure a lease that reflects fair market value, with annual escalators and protections built in.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <h4>Development & Permitting</h4>
+            <p>FreeState handles all permitting, interconnection filings, and approvals. You remain informed without being burdened by process.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <h4>Construction & Operation</h4>
+            <p>Once construction is complete, lease payments begin and continue for the life of the project — typically 25 years or more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container container-narrow">
+        <h2 class="section-title">Common questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h4>What size parcel do you need?</h4>
+            <p>We can evaluate parcels as small as five acres of usable, contiguous land. Larger parcels with good grid proximity are often ideal for our 5 MW community solar projects.</p>
+          </div>
+          <div class="faq-item">
+            <h4>What counties do you work in?</h4>
+            <p>Our primary focus is Columbia, Schoharie, and Washington Counties. We also evaluate sites in Fulton, Otsego, Saratoga, and Warren Counties where grid conditions support development.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Does my land still qualify if it's actively farmed?</h4>
+            <p>Potentially, yes. We evaluate each situation individually. Certain agricultural uses are compatible with solar development, and New York's regulations support agrivoltaic approaches in some cases.</p>
+          </div>
+          <div class="faq-item">
+            <h4>What utility territory do you work in?</h4>
+            <p>We focus primarily on National Grid territory (NYISO Zone F), but also evaluate sites in Central Hudson, NYSEG, Con Edison, and Orange & Rockland territories.</p>
+          </div>
+          <div class="faq-item">
+            <h4>How long does the process take?</h4>
+            <p>From initial evaluation to construction start typically ranges from two to four years, depending on permitting complexity and interconnection queue timing. Lease payments begin upon commercial operation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container container-narrow">
+        <h2>Request a land evaluation</h2>
+        <p class="contact-intro">Provide your property address and name as it appears on the deed. We'll review the site and follow up within a few business days.</p>
+        <form class="contact-form" name="landowner" netlify>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="address">Property address</label>
+            <input type="text" id="address" name="address" placeholder="Street, Town, County, NY">
+          </div>
+          <div class="form-field">
+            <label for="owner">Legal owner name (as on deed)</label>
+            <input type="text" id="owner" name="owner" placeholder="Owner name or entity">
+          </div>
+          <div class="form-field">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Acreage, current use, questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send evaluation request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="wordmark">FreeState<span>Solar</span></span>
+      <p>Tivoli, New York &nbsp;|&nbsp; <a href="mailto:info@freestatesolar.com">info@freestatesolar.com</a></p>
+      <p class="footer-copy">&copy; 2025 FreeState Solar, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
